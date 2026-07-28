@@ -44,7 +44,6 @@
     </section>
   </main>
   <section id="admin" class="admin hidden"><div class="admin-head"><div><div class="eyebrow">Администратор</div><h1>Команда и нагрузка</h1><p>Изменения в Google Sheets появятся после обновления страницы.</p></div><a class="primary" href="https://docs.google.com/spreadsheets/d/1d_dQgt8vGpkbyneIVk8_WC8v3h1l2vy3PQsT9foVIiE/edit" target="_blank">Внести правки ↗</a></div><div class="summary"><article><small>Преподавателей</small><b id="totalTeachers">0</b></article><article><small>Часов в сетке</small><b id="totalHours">0</b></article><article><small>Средняя нагрузка</small><b id="avgHours">0 ч</b></article></div><label class="search wide">⌕<input id="adminQuery" placeholder="Поиск по ФИО или предмету"></label><div class="table"><div class="tr head"><span>Преподаватель</span><span>Предмет</span><span>Нагрузка</span><span>Доступных слотов</span><span>Статус</span></div><div id="team"></div></div></section>
-  <a class="back" href="../">← Маркетинговый план</a>
   <script>
     const DAYS=['Понедельник','Вторник','Среда','Четверг','Пятница']; let teachers=[],schedule=[],selected='';
     const $=id=>document.getElementById(id), norm=s=>String(s||'').toLowerCase().replaceAll('ё','е').replace(/\s+/g,' ').trim(), initials=n=>n.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
